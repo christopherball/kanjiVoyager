@@ -14,6 +14,16 @@ For any given kanji region ( etc...), apply matching component filters on the le
 
 Many sites and apps rely on freely available, error-prone, dictionary and component-based files (JMDict, KRADFile). Many kanji components can't be separately typed since they don't have their own unicode entries. This tool circumvents this particular problem with handcrafted SVG components, raising the bar on component accuracy and thereby searching.
 
+### Build Dist
+
+To generate a clean `dist/` folder containing the deployable static site, run:
+
+```bash
+python3 scripts/build_dist.py
+```
+
+This rebuilds `dist/` from scratch with the current `index.html`, `css`, `scripts/index.js`, `data/kanjiData.json`, and the referenced static image / SVG assets.
+
 ### Credits
 
 Kanji in Context: A lonesome appendix from this book was the original starter source of component inspiration for this project.
